@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Внести Студента";
+}
+@model Site.Db.Students
+
+<form asp-action="CreateStud" asp-controller="Students" method="post">
+    
+    <div>
+        <label asp-for="SecondName">Фамилия</label>
+        <input asp-for="SecondName" type="text" />
+    </div>
+
+    <div>
+        <label asp-for="Name">Имя</label>
+        <input asp-for="Name" type="text" />
+    </div>
+
+    <div>
+        <label asp-for="Surname">Отчество</label>
+        <input asp-for="Surname" type="text" />
+    </div>
+
+    <div>
+        <label asp-for="Height">Рост</label>
+        <input asp-for="Height" type="number" />
+    </div>
+
+    <div>
+        <label asp-for="BirthDay">День Рождения</label>
+        <input asp-for="BirthDay" type="text" />
+    </div>
+
+    <div>
+        <label asp-for="Group">Группа</label>
+        <input asp-for="Group" type="text" />
+    </div>
+
+    <div>
+        <label asp-for="Speciality">Специальность</label>
+        <input asp-for="Speciality" type="text" />
+    </div>
+
+    <div>
+        <label asp-for="Scholarship">Стипендия</label>
+        <input asp-for="Scholarship" type="text" />
+    </div>
+
+    <button type="submit">Отправить</button>
+</form>
