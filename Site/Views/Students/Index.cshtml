@@ -1,5 +1,38 @@
 ﻿@{
     ViewData["Title"] = "Студенты";
-
-
 }
+<h1 class="t">@ViewData["Title"]</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Рост</th>
+            <th>День Рождения</th>
+            <th>Группа</th>
+            <th>Специальность</th>
+            <th>Стипендия</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.id</td>
+                <td>@student.Фамилия</td>
+                <td>@student.Имя</td>
+                <td>@student.Отчество</td>
+                <td>@student.Рост</td>
+                <td>@student.День_Рождения</td>
+                <td>@student.Группа</td>
+                <td>@student.Специальность</td>
+                <td>@student.Стипендия</td>
+
+                
+            </tr>
+        }
+    </tbody>
+</table>

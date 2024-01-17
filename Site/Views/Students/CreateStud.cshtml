@@ -1,6 +1,8 @@
 ﻿@model Student
-
-<h2>Создать студента</h2>
+@{
+    ViewData["Title"] = "Создать Студента";
+}
+<h1 class="t">@ViewData["Title"]</h1>
 
 <form asp-action="CreateStud">
     <div class="form-group">
@@ -35,5 +37,6 @@
         <label asp-for="Стипендия">Стипендия</label>
         <input asp-for="Стипендия" class="form-control" />
     </div>
+    <br>
     <button type="submit" class="btn btn-primary">Создать</button>
 </form>
