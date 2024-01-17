@@ -1,0 +1,39 @@
+﻿@model Student
+
+<h2>Создать студента</h2>
+
+<form asp-action="CreateStud">
+    <div class="form-group">
+        <label asp-for="Фамилия">Фамилия</label>
+        <input asp-for="Фамилия" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Имя">Имя</label>
+        <input asp-for="Имя" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Отчество">Отчество</label>
+        <input asp-for="Отчество" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Рост">Рост</label>
+        <input asp-for="Рост" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="День_Рождения">День рождения</label>
+        <input asp-for="День_Рождения" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Группа">Группа</label>
+        <input asp-for="Группа" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Специальность">Специальность</label>
+        <input asp-for="Специальность" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Стипендия">Стипендия</label>
+        <input asp-for="Стипендия" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Создать</button>
+</form>
